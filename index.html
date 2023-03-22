@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tunify</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li class="brand"><img src="logo.png" alt="Tunify">Tunify</li>
+            <li>Home</li>
+            <li>About</li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="songList">
+            <h1>Best of NCS- No Copyright Sounds</h1>
+            <div class="songItemContainer">
+                <div class="songItem">
+                    <img src="covers/apnabanale.jpg"  alt="1">
+                    <span class="songName">Apna Bana Le</span>
+                    <span class="songlistplay"><span class="timestamp">03:24 <i id="0" class="far songItemPlay fa-circle-play"></i></span></span>
+                </div>
+                <div class="songItem">
+                    <img src="covers/ranjha.jpg" alt="2">
+                    <span class="songName">Ranjha</span>
+                    <span class="songlistplay"><span class="timestamp">03:48<i id="1" class="far songItemPlay fa-circle-play"></i></span></span>
+                </div>
+                <div class="songItem">
+                    <img src="covers/alone.jpg"  alt="3">
+                    <span class="songName">Alone</span>
+                    <span class="songlistplay"><span class="timestamp">04:05 <i id="2" class="far songItemPlay fa-circle-play"></i></span></span>
+                </div>
+                <div class="songItem">
+                    <img src="covers/blankspace.jpg" alt="4">
+                    <span class="songName">Blank Space</span>
+                    <span class="songlistplay"><span class="timestamp">04:35 <i id="3" class="far songItemPlay fa-circle-play"></i></span></span>
+                </div>
+                <div class="songItem">
+                    <img src="covers/cheapthrills.jpg" alt="5">
+                    <span class="songName">Cheap Thrills</span>
+                    <span class="songlistplay"><span class="timestamp">03:33 <i id="4" class="far songItemPlay fa-circle-play"></i></span></span>
+                </div>
+                <div class="songItem">
+                    <img src="covers/dhaga _dhaga.jpg" alt="6">
+                    <span class="songName">Dhaga Dhaga</span>
+                    <span class="songlistplay"><span class="timestamp">03:10 <i id="5" class="far songItemPlay fa-circle-play"></i></span></span>
+                </div>
+                <div class="songItem">
+                    <img src="covers/dilbechara.jpg" alt="7">
+                    <span class="songName">Dil Bechara</span>
+                    <span class="songlistplay"><span class="timestamp">02:43 <i id="6" class="far songItemPlay fa-circle-play"></i></span></span>
+                </div>
+                <div class="songItem">
+                    <img src="covers/littlebitmore.jpg" alt="8">
+                    <span class="songName">Little Bit More</span>
+                    <span class="songlistplay"><span class="timestamp">03:00 <i id="7" class="far songItemPlay fa-circle-play"></i></span></span>
+                </div>
+                <div class="songItem">
+                    <img src="covers/vajale_ki_bara.jpg" alt="9">
+                    <span class="songName">Vajle Ki Baara</span>
+                    <span class="songlistplay"><span class="timestamp">03:08<i id="8" class="far songItemPlay fa-circle-play"></i></span></span>
+                </div>
+                <div class="songItem">
+                    <img src="covers/navrai_majhi.jpg" alt="10">
+                    <span class="songName">Navrai Majhi</span>
+                    <span class="songlistplay"><span class="timestamp">04:22 <i id="9" class="far songItemPlay fa-circle-play"></i></span></span>
+                </div>
+                <div class="songItem">
+                    <img src="covers/Stay.png" alt="11">
+                    <span class="songName">Stay</span>
+                    <span class="songlistplay"><span class="timestamp">02:37 <i id="10" class="far songItemPlay fa-circle-play"></i></span></span>
+                </div>
+                <div class="songItem">
+                    <img src="covers/sukh_kalele.jpg" alt="12">
+                    <span class="songName">Sukh Kalale</span>
+                    <span class="songlistplay"><span class="timestamp">03:26 <i id="11" class="far songItemPlay fa-circle-play"></i></span></span>
+                </div>
+                <div class="songItem">
+                    <img src="covers/tola_tola.jpg" alt="13">
+                    <span class="songName">Tola Tola</span>
+                    <span class="songlistplay"><span class="timestamp">03:28 <i id="12" class="far songItemPlay fa-circle-play"></i></span></span>
+                </div>
+                <div class="songItem">
+                    <img src="covers/You.jpg" alt="14">
+                    <span class="songName">Tu/You</span>
+                    <span class="songlistplay"><span class="timestamp">02:22 <i id="13" class="far songItemPlay fa-circle-play"></i></span></span>
+                </div>
+                <div class="songItem">
+                    <img src="covers/tumsehi.jpg" alt="15">
+                    <span class="songName">Tum Se Hi</span>
+                    <span class="songlistplay"><span class="timestamp">05:23<i id="14" class="far songItemPlay fa-circle-play"></i></span></span>
+                </div>
+                
+            </div>
+        </div>
+        <div class="SongBanner"></div>
+    </div>
+    
+
+    <div class="bottom">
+        <input type="range" name="range" id="myProgressBar" min="0" value="0" max="100">
+        <div class="icons">
+            <!--fontawesome icons-->
+            <i class="fas fa-2x fa-backward-step" id="Previous"></i>
+            <i class="fas fa-2x fa-circle-play" id="masterPlay"></i>
+            <i class="fas fa-2x fa-forward-step" id="Next"></i>
+        </div>
+        <div class="songInfo">
+            <!--gif-->
+         <img src="Gif.gif" width="42px" alt="" id="Gif"><span id="MasterSongName"></span> <!--Apna Bana Le in js-->
+        </div>
+    </div>
+    <script src="tunify.js"></script>
+    <script src="https://kit.fontawesome.com/6f1e38cbd8.js" crossorigin="anonymous"></script>
+</body>
+</html>
